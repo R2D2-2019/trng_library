@@ -5,7 +5,7 @@ int main(){
     r2d2::trng_c::init();
 
     // wait until we have a new random number
-    while(!r2d2::trng_c::value_available()){∏
+    while(!r2d2::trng_c::value_available()){}
 
     hwlib::cout << "Random number: " << r2d2::trng_c::get() << '\n';
 
